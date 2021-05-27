@@ -7,80 +7,74 @@
         <script src="main.js"></script>
     </head>
     <body>
-        <form>
-            <label for="name">Imie i nazwisko:</label><br>
+        <div class="form">
+            <!-- Name -->
+            <label for="name">Imie:</label><br>
             <input type="text" id="name" name="name"><br>
-            <div>
-                <br><label for="quest1">Do układu SI nie należy?</label><br> 
-                <input type="radio" id="quest1" name="quest1" value="1">tona<br>
-                <input type="radio" id="quest1" name="quest1" value="0">metr<br>
-                <input type="radio" id="quest1" name="quest1" value="0">sekunda<br>
-                <input type="radio" id="quest1" name="quest1" value="0">kilogram<br>
-            </div>
-            <div>
-                <br><label for="quest2">Kto wstrzymał Słońce i ruszył ziemię?</label><br> 
-                <input type="radio" id="quest2" name="quest2" value="0">Galileusz<br>
-                <input type="radio" id="quest2" name="quest2" value="0">Newton<br>
-                <input type="radio" id="quest2" name="quest2" value="1">Kopernik<br>
-                <input type="radio" id="quest2" name="quest2" value="0">Kepler<br>
-            </div>
-            <div>
-                <br><label for="quest3">Jaką literą oznaczamy przyspieszenie</label><br> 
-                <input type="radio" id="quest3" name="quest3" value="0">v<br>
-                <input type="radio" id="quest3" name="quest3" value="1">a<br>
-                <input type="radio" id="quest3" name="quest3" value="0">F<br>
-                <input type="radio" id="quest3" name="quest3" value="0">s<br>
-            </div>
-            <div>
-                <br><label for="quest4">Herc to jednostka?</label><br> 
-                <input type="radio" id="quest4" name="quest4" value="0">prędkości<br>
-                <input type="radio" id="quest4" name="quest4" value="0">czasu<br>
-                <input type="radio" id="quest4" name="quest4" value="1">częstotliwości<br>
-                <input type="radio" id="quest4" name="quest4" value="0">tarcia<br>
-            </div>
-            <div>
-                <br><label for="quest5">Siła wypadkowa to?</label><br> 
-                <input type="radio" id="quest5" name="quest5" value="0">jedna siła<br>
-                <input type="radio" id="quest5" name="quest5" value="0">kilka sił<br>
-                <input type="radio" id="quest5" name="quest5" value="0">dwie siły<br>
-                <input type="radio" id="quest5" name="quest5" value="1">kilka sił które można zastąpić jedną siłą<br>
-            </div>
-            <div>
-                <br><label for="quest6">Moc obliczamy ze wzoru?</label><br> 
-                <input type="radio" id="quest6" name="quest6" value="0">W = W/t<br>
-                <input type="radio" id="quest6" name="quest6" value="0">P = v/s<br>
-                <input type="radio" id="quest6" name="quest6" value="1">P = W/t<br>
-                <input type="radio" id="quest6" name="quest6" value="0">W = v/s<br>
-            </div>
-            <div>
-                <br><label for="quest7">Księżyc to?</label><br> 
-                <input type="radio" id="quest7" name="quest7" value="0">sztczny satelita ziemi<br>
-                <input type="radio" id="quest7" name="quest7" value="1">naturalny satelita ziemi<br>
-                <input type="radio" id="quest7" name="quest7" value="0">osobna planeta układu słonecznego<br>
-                <input type="radio" id="quest7" name="quest7" value="0">planeta karłowata<br>
-            </div>
-            <div>
-                <br><label for="quest8"></label><br> 
-                <input type="radio" id="quest8" name="quest8" value="0"><br>
-                <input type="radio" id="quest8" name="quest8" value="0"><br>
-                <input type="radio" id="quest8" name="quest8" value="1"><br>
-                <input type="radio" id="quest8" name="quest8" value="0"><br>
-            </div>
-            <div>
-                <br><label for="quest9"></label><br> 
-                <input type="radio" id="quest9" name="quest9" value="0"><br>
-                <input type="radio" id="quest9" name="quest9" value="0"><br>
-                <input type="radio" id="quest9" name="quest9" value="1"><br>
-                <input type="radio" id="quest9" name="quest9" value="0"><br>
-            </div>
-            <div>
-                <br><label for="quest10"></label><br> 
-                <input type="radio" id="quest10" name="quest10" value="1"><br>
-                <input type="radio" id="quest10" name="quest10" value="0"><br>
-                <input type="radio" id="quest10" name="quest10" value="0"><br>
-                <input type="radio" id="quest10" name="quest10" value="0"><br>
-            </div>            
-            <br><input type="submit" value="Sprawdź!" onclick="question()">
-        </form>
+            <!-- Question1 -->
+            <br><label for="quest1">1. Do układu SI nie należy?</label><br> 
+            <input type="radio" id="quest1" name="quest1" value="1">Tona<br>
+            <input type="radio" id="quest1" name="quest1" value="0">Metr<br>
+            <input type="radio" id="quest1" name="quest1" value="0">Sekunda<br>
+            <input type="radio" id="quest1" name="quest1" value="0">Kilogram<br>
+            <!-- Question2 -->
+            <br><label for="quest2">2. Kto wstrzymał Słońce i ruszył ziemię?</label><br> 
+            <input type="radio" id="quest2" name="quest2" value="0">Galileusz<br>
+            <input type="radio" id="quest2" name="quest2" value="0">Newton<br>
+            <input type="radio" id="quest2" name="quest2" value="1">Kopernik<br>
+            <input type="radio" id="quest2" name="quest2" value="0">Kepler<br>
+            <!-- Question3 -->
+            <br><label for="quest3">3. Jaką literą oznaczamy przyspieszenie</label><br> 
+            <input type="radio" id="quest3" name="quest3" value="0">v<br>
+            <input type="radio" id="quest3" name="quest3" value="1">a<br>
+            <input type="radio" id="quest3" name="quest3" value="0">F<br>
+            <input type="radio" id="quest3" name="quest3" value="0">s<br>
+            <!-- Question4 -->
+            <br><label for="quest4">4. Herc to jednostka?</label><br> 
+            <input type="radio" id="quest4" name="quest4" value="0">Pędkości<br>
+            <input type="radio" id="quest4" name="quest4" value="0">Czasu<br>
+            <input type="radio" id="quest4" name="quest4" value="1">Częstotliwości<br>
+            <input type="radio" id="quest4" name="quest4" value="0">Tarcia<br>
+            <!-- Question5 -->
+            <br><label for="quest5">5. Siła wypadkowa to?</label><br> 
+            <input type="radio" id="quest5" name="quest5" value="0">Jedna siła<br>
+            <input type="radio" id="quest5" name="quest5" value="0">Kilka sił<br>
+            <input type="radio" id="quest5" name="quest5" value="0">Dwie siły<br>
+            <input type="radio" id="quest5" name="quest5" value="1">Kilka sił które można zastąpić jedną siłą<br>
+            <!-- Question6 -->
+            <br><label for="quest6">6. Moc obliczamy ze wzoru?</label><br> 
+            <input type="radio" id="quest6" name="quest6" value="0">W = W/t<br>
+            <input type="radio" id="quest6" name="quest6" value="0">P = v/s<br>
+            <input type="radio" id="quest6" name="quest6" value="1">P = W/t<br>
+            <input type="radio" id="quest6" name="quest6" value="0">W = v/s<br>
+            <!-- Question7 -->
+            <br><label for="quest7">7. Księżyc to?</label><br> 
+            <input type="radio" id="quest7" name="quest7" value="0">Sztczny satelita ziemi<br>
+            <input type="radio" id="quest7" name="quest7" value="1">Naturalny satelita ziemi<br>
+            <input type="radio" id="quest7" name="quest7" value="0">Osobna planeta układu słonecznego<br>
+            <input type="radio" id="quest7" name="quest7" value="0">Planeta karłowata<br>
+            <!-- Question8 -->
+            <br><label for="quest8">8. Ile jest faz księżyca na półkuli północnej?</label><br> 
+            <input type="radio" id="quest8" name="quest8" value="0">1<br>
+            <input type="radio" id="quest8" name="quest8" value="0">2<br>
+            <input type="radio" id="quest8" name="quest8" value="0">3<br>
+            <input type="radio" id="quest8" name="quest8" value="1">4<br>
+            <!-- Question9 -->
+            <br><label for="quest9">9. Jaka atmosfera występuje na księżycu?</label><br> 
+            <input type="radio" id="quest9" name="quest9" value="0">Wodorowa<br>
+            <input type="radio" id="quest9" name="quest9" value="0">Tlenowa<br>
+            <input type="radio" id="quest9" name="quest9" value="1">Niema tam atmosfery<br>
+            <input type="radio" id="quest9" name="quest9" value="0">Chlorowa<br>
+            <!-- Question10 -->
+            <br><label for="quest10">10. Czym charakteryzuje się satelita geostacjonarna?</label><br> 
+            <input type="radio" id="quest10" name="quest10" value="1">Nie zmienia położenia względem ziemi<br>
+            <input type="radio" id="quest10" name="quest10" value="0">Jest kilka razy szybsza od obrotu ziemi<br>
+            <input type="radio" id="quest10" name="quest10" value="0">Jest kilka razy wolniejsza od obroru ziemi?<br>
+            <input type="radio" id="quest10" name="quest10" value="0">Jest to satelita która wylatuje z naszej galaktyki<br>
+            <!-- Submit button -->           
+            <br><button type="button" onclick="question()"> Sprawdź! </button>
+
+            <p id="score"></p>
+        </div>
     </body>
 </html>
